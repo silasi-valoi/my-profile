@@ -301,10 +301,6 @@ nav input {
   opacity: 0;
 }
 
-.app-container {
-    border : px solid red;
-
-}
 
 .app-contents {
     border : px solid blue;

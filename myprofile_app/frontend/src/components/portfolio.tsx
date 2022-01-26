@@ -29,7 +29,8 @@ class PortfolioContainer extends Component {
 export default IndexHoc(PortfolioContainer);
 
 const PortfolioTemplate:React.FC<{styles?:object}>   = props => {
-    //console.log(wiplayitMockSmall, wiplayitMockBig)
+    //console.log(props)
+
     return(
         <div style={props.styles} id="app-contents" className="app-contents">
             <div className="contents-header">
@@ -79,7 +80,7 @@ const PortfolioTemplate:React.FC<{styles?:object}>   = props => {
                                 </ul>
                                 <ul className="portfolio-links">
                                     <li className="">    
-                                        <a href="https://www.wiplayit.com"
+                                        <a href="https://baloyi.pythonanywhere.com"
                                            type="button"
                                            target="_blank"
                                            className="twitter-link">

@@ -79,9 +79,7 @@ class Home extends Component<Props, State> {
             console.log(error)  
         })
     }
-  
-    
-      
+        
     render() {
         let props = {...this.props, ...this.state};
 
@@ -136,9 +134,7 @@ const HomePageTemplate:React.FC<{profile?:object, styles?:object}>  = props => {
                         <ul className="credentials-contents">
                             <li>Age</li><li>30++</li>
                         </ul>
-                        <ul className="credentials-contents">
-                            <li>Nationality</li> <li>Mozambique</li>
-                        </ul>
+                        
                         <ul className="credentials-contents">
                             <li>Residence</li> <li>South Africa</li>
                         </ul>

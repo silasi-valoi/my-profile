@@ -15,7 +15,7 @@ interface State {
 }
 
 class SkillsContainer extends Component<Props, State> {
-     private isFullyMounted: boolean = false;
+    private isFullyMounted: boolean = false;
 
     static defaultProps: object = {
        

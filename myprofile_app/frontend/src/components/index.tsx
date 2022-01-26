@@ -16,7 +16,7 @@ const SlideFromRight:object = {
             timingfunction : 'cubic-bezier(0.25, 0.5, 0.5, 0.9)'
         },
         begin : {
-           'transform': 'translateX(-35%)',
+           'transform': 'translateX(35%)',
            'opacity': 0
         },
         end : {
@@ -155,7 +155,7 @@ export function IndexHoc(Component) {
                 return;
             }
 
-            setTimeout(()=> this.setState({changing:true}), 100);
+            this.setState({changing:true});
             setTimeout(()=> history.push(url, state), 500);
         };
 
@@ -182,7 +182,7 @@ export function IndexHoc(Component) {
     
     getProps(){
         let {effect, changing} = this.state;
-
+        
         let styles =  Object.assign({},
                          effect['transition'],
                          changing? effect['begin']:effect['end']);
@@ -199,6 +199,8 @@ export function IndexHoc(Component) {
         let props = this.getProps();
         let {effect} = props;
         let styles =  Object.assign({}, effect?.transition,effect?.end);
+        
+        console.log(props)
         
         return (
             <div id="app-container" className="app-container">
