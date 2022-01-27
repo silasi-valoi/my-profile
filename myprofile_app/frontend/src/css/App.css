@@ -339,9 +339,7 @@
     }
 
     .about-text-box {
-        margin-left  : 6%; 
-        margin-right : 3%; 
-        
+        margin : 0 6%; 
     }
 
     .about-title-box {
