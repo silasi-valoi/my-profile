@@ -5,14 +5,11 @@ import ProfilePicture from 'media/silas-dev.jpg'
 
 
 interface Props {
-    profile:object;
-    home:object;
     
 }
 
 interface State {
-    home?:object;
-    profile?:object;
+    isMounted:boolean;
     className?:string;
 };
 
@@ -24,7 +21,7 @@ class Home extends Component<Props, State> {
     };
 
     readonly state: State = {
-             
+        isMounted:false,
     };
 
     public get isMounted() {
@@ -58,7 +55,8 @@ class Home extends Component<Props, State> {
     
     componentDidMount() {
         this.isMounted = true;
-        this.getProfileContents()
+        //this.getProfileContents()
+        this.setState({isMounted:true})
     };
    
    
@@ -71,8 +69,7 @@ class Home extends Component<Props, State> {
             if (data) {
                 let home = data.home[0]
                 let profile = data.profile[0]
-               
-                this.setState({profile, home})  
+                                
             }
             
         })

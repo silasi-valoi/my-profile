@@ -199,9 +199,7 @@ export function IndexHoc(Component) {
         let props = this.getProps();
         let {effect} = props;
         let styles =  Object.assign({}, effect?.transition,effect?.end);
-        
-        console.log(props)
-        
+          
         return (
             <div id="app-container" className="app-container">
                 <NavBarTemplate {...props}/>
