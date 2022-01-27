@@ -129,7 +129,7 @@ const HomePageTemplate:React.FC<{profile?:object, styles?:object}>  = props => {
                         <ul className="about-text">
                             <li>
                                 Versatile self-taught Web Application Developer with 4 years handling 
-                                full stack development duties for clients. 
+                                full-stack development duties for clients. 
                                 Acquainted with dominant programming languages,protocols, 
                                 and platforms needed to launch successful web applications.
                                 Adept at creating software that simultaneously pleases users,
