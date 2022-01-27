@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import IndexHoc from "./index"
+import ProfilePicture from 'media/silas-dev.jpg'
 
 
 interface Props {
@@ -101,7 +102,7 @@ const HomePageTemplate:React.FC<{profile?:object, styles?:object}>  = props => {
             <div className="contents-header">
                 <div className="about-profile-pic-box">
                     <div className="profile-pic-box">
-                        <img src={profile && profile['profile_pic']}
+                        <img src={ProfilePicture}
                              alt=""
                              loading="lazy" 
                             className="profile-pic"/> 
@@ -126,7 +127,14 @@ const HomePageTemplate:React.FC<{profile?:object, styles?:object}>  = props => {
                            <li>About <span>Me</span></li>
                        </ul> 
                         <ul className="about-text">
-                            <li>{profile && profile['about']}</li>
+                            <li>
+                                Versatile self-taught Web Application Developer with 4 years handling 
+                                full stack development duties for clients. 
+                                Acquainted with dominant programming languages,protocols, 
+                                and platforms needed to launch successful web applications.
+                                Adept at creating software that simultaneously pleases users,
+                                marketers and security personnel.
+                            </li>
                         </ul>
                     </div>
 
